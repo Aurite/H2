@@ -1,72 +1,50 @@
-%h3
-  H2
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>H2</title>
-  <!--Bootstrap CSS-->
-  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-  <!--FontAwesome-->
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-  <!--Your CSS-->
-  <link href="style.css" rel="stylesheet" type='text/css'>
-  <!--Google Web Fonts-->
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>  
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-</head>
-<body>
-  <!--YOUR HTML TEMPLATES GO THERE-->
-</body>
-</html>
-<nav class="navbar navbar-fixed-top">
-  <div class="navbar-inner" id="custom-nav">
-    <a class="brand" href="#">
-      <img src="handshake.png" id="logo">
-    </a>
-    <ul class="nav pull-right">
-      <li>
-        <a href="http://www.facebook.com/simplon.co" target="_blank">
-          <i class="icon-facebook-sign icon-4x social_icon"></i>
-        </a>
-      </li>
-      <li>
-        <a href="http://twitter.com/simplon.co" target="_blank">
-          <i class="icon-twitter-sign icon-4x social_icon"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="my-container narrow josefin">
-  <div class="row-fluid">
-    <div class="span6">
-      <img src="handshake.png">
-    </div>
-    <div class="span6">
-  <h1 class="big">
-    H²
-    <h2 class="small">
-    Connects hackers and helpers in real time
-    </div>
-  </div>
-</div>
-  <div class="my-container narrow grey">
-  <div class="row-fluid">
-    <div class="span4 step center">
-      <img src="hacker.png">
-      <h3>HACKERS</h3>
-      <p>Sign up during hackatons and find talented helpers to assist you on the way</p>
-    </div>
-    <div class="span4 step center">
-      <img src="helper.png">
-      <h3>HELPERS</h3>
-      <p>Cant' attend hackaton but would love to help?  Sign up and pick the projects that need your skills</p>
-    </div>
-    <div class="span4 step center">
-      <img src="create.png">
-      <h3>H2</h3>
-      <p> Connect and Create!</p>
-    </div>
-  </div>
-</div>
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+      %title H2
+      / Bootstrap CSS
+      %link{:href => "http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css", :rel => "stylesheet"}
+        / FontAwesome
+        %link{:href => "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css", :rel => "stylesheet"}
+          / Your CSS
+          %link{:href => "style.css", :rel => "stylesheet", :type => "text/css"}
+            / Google Web Fonts
+            %link{:href => "http://fonts.googleapis.com/css?family=Josefin+Slab:700", :rel => "stylesheet", :type => "text/css"}
+              %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet", :type => "text/css"}
+  %body
+    / YOUR HTML TEMPLATES GO THERE
+%nav.navbar.navbar-fixed-top
+  #custom-nav.navbar-inner
+    %a.brand{:href => "#"}
+      %img#logo{:src => "handshake.png"}
+    %ul.nav.pull-right
+      %li
+        %a{:href => "http://www.facebook.com/simplon.co", :target => "_blank"}
+          %i.icon-facebook-sign.icon-4x.social_icon
+      %li
+        %a{:href => "http://twitter.com/simplon.co", :target => "_blank"}
+          %i.icon-twitter-sign.icon-4x.social_icon
+.my-container.narrow.josefin
+  .row-fluid
+    .span6
+      %img{:src => "handshake.png"}
+    .span6
+      %h1.big
+        H²
+        %h2.small
+          Connects hackers and helpers in real time
+.my-container.narrow.grey
+  .row-fluid
+    .span4.step.center
+      %img{:src => "hacker.png"}
+        %h3 HACKERS
+        %p Sign up during hackatons and find talented helpers to assist you on the way
+    .span4.step.center
+      %img{:src => "helper.png"}
+        %h3 HELPERS
+        %p Cant' attend hackaton but would love to help?  Sign up and pick the projects that need your skills
+    .span4.step.center
+      %img{:src => "create.png"}
+        %h3 H2
+        %p Connect and Create!
