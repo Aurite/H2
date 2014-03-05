@@ -18,7 +18,18 @@ gem 'rolify'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'thin'
+
+#Gem heroku pour faire du test en reel
+gem 'heroku'
+
 group :development do
+
+#Gem pour le debug
+  
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'guard-bundler'
