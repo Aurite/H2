@@ -62,8 +62,7 @@ class EventsController < ApplicationController
   end
 
   def participate
-      show
-      @info=@event
+      @participation=@event
   end
 
   private
