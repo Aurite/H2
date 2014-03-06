@@ -21,6 +21,7 @@ gem 'thin'
 
 #Gem heroku pour faire du test en reel
 gem 'heroku'
+gem 'jquery-ui-rails'
 
 group :development do
 
@@ -42,7 +43,6 @@ group :development do
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
   gem 'annotate'
-  gem 'jquery-ui-rails'
 end
 group :development, :test do
   gem 'factory_girl_rails'
