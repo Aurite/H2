@@ -1,7 +1,8 @@
 = stylesheet_link_tag("style_interface")
-= javascript_include_tag("date")
 %h1
   Connection Square
+  
+  = javascript_include_tag("date")
   .row
     .col-md-3
             
@@ -46,26 +47,6 @@
               %a{href: "#"}
                 %i.glyphicon.glyphicon-comment
                 Shoutbox
-                            
-            %li
-              %a{href: "#"}
-                %i.glyphicon.glyphicon-user
-                Staff List
-                            
-            %li
-              %a{href: "#"}
-                %i.glyphicon.glyphicon-flag
-                Transactions
-                            
-            %li
-              %a{href: "#"}
-                %i.glyphicon.glyphicon-exclamation-sign
-                Rules
-                            
-            %li
-              %a{href: "#"}
-                %i.glyphicon.glyphicon-off
-                Logout
                         
                   
                 
@@ -82,14 +63,6 @@
                             
             %li
               %a{href: "#"} Information & Stats
-                              
-                            
-            %li
-              %a{href: "#"} Views
-                              
-                            
-            %li
-              %a{href: "#"} Requests
                               
                             
             %li
@@ -123,10 +96,6 @@
               %a{href: "#"}
                 %i.glyphicon.glyphicon-circle
                 Twitter
-                        
-                  
-              
-                
             
       %hr/
             
@@ -160,20 +129,6 @@
             %i.glyphicon.glyphicon-link
             Widgets
                 
-        %li
-          %a{href: "#"}
-            %i.glyphicon.glyphicon-list-alt
-            Reports
-                
-        %li
-          %a{href: "#"}
-            %i.glyphicon.glyphicon-book
-            Pages
-                
-        %li
-          %a{href: "#"}
-            %i.glyphicon.glyphicon-star
-            Social Media
               
     .col-md-9
       %h2
@@ -189,24 +144,14 @@
         %li
           %a{href: "/tagged/bootstrap-3"} Bootstrap 3
                 
-        %li
-          %a{href: "/61518", title: "Bootstrap 3 Panel"} Panels
-                
-        %li
-          %a{href: "/61521", title: "Bootstrap 3 Icons"} Glyphicons
-                
-        %li
-          %a{href: "/61523", title: "Bootstrap 3 ListGroup"} List Groups
-                
-        %li
-          %a{href: "#"} GitHub
-                
-        %li
-          %a{href: "/61518", title: "Bootstrap 3 Slider"} Carousel
                 
         %li
           %a{href: "/62603"} Layout
               
     .col-md-3
+      #draggable.ui-widget-content
+        %p Drag me to my target
+      #droppable.ui-widget-header
+        %p Drop here
 
             
