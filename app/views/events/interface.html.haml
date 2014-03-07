@@ -1,163 +1,94 @@
-= stylesheet_link_tag("style_interface")
-%h1
-  Connection Square
-  
-  = javascript_include_tag("date")
-  .row
-    .span4
-      .col-md-3
-              
-        / Left column
-              
-        %a{href: "#"}>
-          %strong
-            %i.glyphicon.glyphicon-wrench
-              
-        %hr/
-              
-              
-        %ul.list-unstyled
-                  
-          %li.nav-header
-            %a{"data-target" => "#userMenu", "data-toggle" => "collapse", href: "#"}
-                        
-              %h5
-                Profile
-                %i.glyphicon.glyphicon-chevron-down
-                        
-                        
-            %ul#userMenu.list-unstyled.collapse.in
-                              
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700", media: "screen", rel: "stylesheet", type: "text/css"}/
+    :css
+      /* No content under the fixed bootstrap header. */
+      body {
+        padding-top: 60px;
+      }
+    %link{href: "stylesheets/bootstrap.css", media: "screen", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/bootstrap-responsive.css", media: "screen", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/common.css", media: "screen", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/fontawesome.css", media: "screen", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/project.css", media: "screen", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/h2.css", media: "screen", rel: "stylesheet", type: "text/css"}/
+    /
+      Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
+      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    %title H2
+  %body
+    #absolute-wrapper
+      %a.brand{href: "#"} AwesomeCo
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        %img.pull-left.image{src: "images/bolt.png"}/
+        %ul.nav.pull-right
+          %li
+            %a{href: "#"} Home
+          %li
+            %a{href: "#"} Tour
+          %li
+            %a{href: "#"} About
+    .container-fluid.container-fluid-1
+      .container
+        .row-fluid
+          %span.span12
+            %h1.heading Marketing Info Page
+            %p Subheading for marketing info
+    .container.container-1
+      .row-fluid
+        %span.span3
+          .well
+            %ul.nav.nav-list
+              %li
+                %a.a-1.a-2{href: "#"}
+                  Feature One
+                  %i.icon.icon-chevron-right.pull-right
               %li.active
-                %a{href: "#"}
-                  %i.glyphicon.glyphicon-home
-                  Home
-                              
+                %a.a-2{href: "#"}
+                  Feature Two
+                  %i.icon.icon-chevron-right.pull-right
               %li
-                %a{href: "#"}
-                  %i.glyphicon.glyphicon-envelope
-                  Messages
-                  %span.badge.badge-info 4
-                              
+                %a.a-1.a-2{href: "#"}
+                  Feature Three
+                  %i.icon.icon-chevron-right.pull-right
               %li
-                %a{href: "#"}
-                  %i.glyphicon.glyphicon-cog
-                  Options
-                              
+                %a.a-1.a-2{href: "#"}
+                  Feature Four
+                  %i.icon.icon-chevron-right.pull-right
               %li
-                %a{href: "#"}
-                  %i.glyphicon.glyphicon-comment
-                  Shoutbox
-                          
-                    
-                  
-          %li.nav-header
-            %a{"data-target" => "#menu2", "data-toggle" => "collapse", href: "#"}
-                        
-              %h5
-                Reports
-                %i.glyphicon.glyphicon-chevron-right
-                        
-                    
-                        
-            %ul#menu2.list-unstyled.collapse
-                              
-              %li
-                %a{href: "#"} Information & Stats
-                                
-                              
-              %li
-                %a{href: "#"} Timetable
-                                
-                              
-              %li
-                %a{href: "#"} Alerts
-                                
-                          
-                    
-                  
-          %li.nav-header
-                    
-            %a{"data-target" => "#menu3", "data-toggle" => "collapse", href: "#"}
-                        
-              %h5
-                Social Media
-                %i.glyphicon.glyphicon-chevron-right
-                        
-                    
-                        
-            %ul#menu3.list-unstyled.collapse
-              %li
-                %a{href: "#"}
-                  %i.glyphicon.glyphicon-circle
-                  Facebook
-                              
-              %li
-                %a{href: "#"}
-                  %i.glyphicon.glyphicon-circle
-                  Twitter
-              
-        %hr/
-              
-              
-        %a{href: "#"}>
-          %strong
-            %i.glyphicon.glyphicon-link
-            Resources
-          
-              
-              
-        %hr/
-              
-              
-        %ul.nav.nav-pills.nav-stacked
-                  
-          %li.nav-header
-                  
-          %li
-            %a{href: "#"}
-              %i.glyphicon.glyphicon-list
-              Layouts & Templates
-                  
-          %li
-            %a{href: "#"}
-              %i.glyphicon.glyphicon-briefcase
-              Toolbox
-                  
-          %li
-            %a{href: "#"}
-              %i.glyphicon.glyphicon-link
-              Widgets
-                  
-                
-      .col-md-9
-        %h2
-          .message_inscription
-            %p
-              Bonjour le monde
-        %hr/
-              
-        %ul.nav.nav-stacked
-                  
-          %li.active
-            %a{href: "http://bootply.com", target: "ext", title: "The Bootstrap Playground"} Playground
-
-                  
-          %li
-            %a{href: "/tagged/bootstrap-3"} Bootstrap 3
-                  
-                  
-          %li
-            %a{href: "/62603"} Layout
-                
-      .col-md-3
-        #draggable.ui-widget-content
-          %p Drag me to my target
-        #droppable.ui-widget-header
-          %p Drop here
-
-
-        .span8
-          .col-md-4
+                %a.a-1{href: "#"}
+                  Feature Five
+                  %i.icon.icon-chevron-right.pull-right.icon-chevron-right-1
+        %span.span9
+          .page-header
             %h1
-              Ttest
+              Hackathons
+              %small
+                %br
+                  Choose your hackathon
+                    
+            %hr
+            %h1
+              Participants
+              %small 
+                %br 
+                  Pick your participants
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis quam at justo condimentum condimentum. Fusce arcu felis, fringilla nec varius a, rhoncus a libero. Donec ut ligula vitae leo pellentesque varius.
+          %img.image{src: "http://placehold.it/850x300"}/
+    .container-fluid.container-fluid-2
+      .container
+        .row-fluid
+          %span.span12
+            .pull-left
+              %p © AwesomeCo
+            %ul.nav.nav-pills.pull-right
+              %li
+                %a{href: "#"} About
+              %li
+                %a{href: "#"} Privacy
+              %li
+                %a{href: "#"} Terms Of Service
