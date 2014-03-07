@@ -72,15 +72,19 @@ H2::Application.configure do
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
-  config.action_mailer.smtp_settings = {
-    address: "smtp.sendgrid.com",
-    port: 587,
-    domain: ENV["h2app.herokuapp.com"],
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: ENV["app22789455@heroku.com"],
-    password: ENV["9a84rsvo"]
-  }
+
+
+ActionMailer::Base.smtp_settings = {
+  :address        => 'smtp.sendgrid.net',
+  :port           => '587',
+  :authentication => :plain,
+  :user_name      => ENV['SENDGRID_USERNAME'],
+  :password       => ENV['SENDGRID_PASSWORD'],
+  :domain         => 'heroku.com',
+  :enable_starttls_auto => true
+}
+
+
   # ActionMailer Config
   config.action_mailer.default_url_options = { :host => 'example.com' }
   config.action_mailer.delivery_method = :smtp
