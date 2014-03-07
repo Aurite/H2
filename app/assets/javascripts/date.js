@@ -38,6 +38,9 @@
     $("a.btn.btn-sm.btn-info").click(function(){
 
         alert("bouton a click");
+        var be="Affichage hackaton";
+            $("<p Bonjour/>").appendTo(" h1 .heading");
+
     });
     
     $("a.btn.btn-sm.btn-primary").click(function(){
