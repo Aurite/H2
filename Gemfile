@@ -24,6 +24,9 @@ gem 'thin'
 gem 'heroku'
 gem 'jquery-ui-rails'
 
+#Gem gestion heroku
+gem 'rails_12factor', group: :production
+
 group :development do
 
 #Gem pour le debug
