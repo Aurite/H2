@@ -70,25 +70,104 @@
               %small
                 %br
                   Choose your hackathon
-                    
+                  .container
+                    \    
+  .row
+    %br
+      %br
+        \      
+        .span3.well
+          \        
+          %center
+            \        
+            %a{"data-toggle" => "modal", href: "#aboutModal"}
+              %img.img-circle
+                = image_tag("hackathons.png")
+              \        
+              %h3 Joe Sixpack
+              \        
+              %em click my face for more
+              \         ;p>By the way,
+              %br
+                %a{href: "http://bootsnipp.com/TXTCLASS/snippets/25zz", target: "_blank"} there's a fresh 3.1.0 version ready
+              \      
+            \            
+            #aboutModal.modal.hide
+              \          
+              .modal-header
+                \              
+                %button.close{"data-dismiss" => "modal", type: "button"} ✕
+                \              
+                %h3 About Joe
+                \          
+              \              
+              .modal-body{style: "text-align:center;"}
+                \              
+                .row-fluid
+                  \                  
+                  .span10.offset1
+                    \                      
+                    #modalTab
+                      \                          
+                      .tab-content
+                        \                              
+                        #about.tab-pane.active
+                          \    
+                          %img.img-circle
+                            = image_tag("hackathons.png")
+                          \      
+                          %h3.media-heading
+                            Joe Sixpack
+                            %small USA
+                          \                
+                          %span
+                            %strong Skills:
+                          \                
+                          %span.label.label-warning HTML5/CSS
+                          \                
+                          %span.label.label-info Adobe CS 5.5
+                          \                
+                          %span.label.label-info Microsoft Office
+                          \                
+                          %span.label.label-success Windows XP, Vista, 7
+                          \    
+                        \    
+                        %hr
+                          \    
+                          %center
+                            \    ;p class="text-left">
+                            %strong Bio:
+                            %br
+                              \     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.
+                            \      
+                            %br
+                              \      
+                            \      
+                          \  
+                        
+             
+
             %hr
-            %h1
-              Participants
-              %small 
-                %br 
-                  Pick your participants
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis quam at justo condimentum condimentum. Fusce arcu felis, fringilla nec varius a, rhoncus a libero. Donec ut ligula vitae leo pellentesque varius.
-          %img.image{src: "http://placehold.it/850x300"}/
-    .container-fluid.container-fluid-2
-      .container
-        .row-fluid
-          %span.span12
-            .pull-left
-              %p © AwesomeCo
-            %ul.nav.nav-pills.pull-right
-              %li
-                %a{href: "#"} About
-              %li
-                %a{href: "#"} Privacy
-              %li
-                %a{href: "#"} Terms Of Service
+    /           .span.span9
+    /             %br
+
+    /               %h1
+    /                 Participants
+    / /           %small 
+    / /             %br 
+    /               Pick your participants
+    /       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis quam at justo condimentum condimentum. Fusce arcu felis, fringilla nec varius a, rhoncus a libero. Donec ut ligula vitae leo pellentesque varius.
+    /       %img.image{src: "http://placehold.it/850x300"}/
+    / .container-fluid.container-fluid-2
+    /   .container
+    /     .row-fluid
+    /       %span.span12
+    /         .pull-left
+    /           %p © AwesomeCo
+    /         %ul.nav.nav-pills.pull-right
+    /           %li
+    /             %a{href: "#"} About
+    /           %li
+    /             %a{href: "#"} Privacy
+    /           %li
+    /             %a{href: "#"} Terms Of Service
