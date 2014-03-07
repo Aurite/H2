@@ -78,8 +78,8 @@ H2::Application.configure do
    # domain: ENV["DOMAIN_NAME"],
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["keitamori@gmail.com"],
-    password: ENV["maelstrom87"]
+    user_name: ENV["app22789455@heroku.com"],
+    password: ENV["9a84rsvo"]
   }
   # ActionMailer Config
   config.action_mailer.default_url_options = { :host => 'example.com' }
