@@ -26,6 +26,7 @@ gem 'jquery-ui-rails'
 
 #Gem gestion heroku
 gem 'rails_12factor', group: :production
+gem 'sendgrid'
 
 group :development do
 
