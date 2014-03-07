@@ -75,7 +75,7 @@ H2::Application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.sendgrid.com",
     port: 587,
-   # domain: ENV["DOMAIN_NAME"],
+    domain: ENV["heroku.com"],
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: ENV["app22789455@heroku.com"],
