@@ -15,11 +15,14 @@
     %link{href: "stylesheets/fontawesome.css", media: "screen", rel: "stylesheet", type: "text/css"}/
     %link{href: "stylesheets/project.css", media: "screen", rel: "stylesheet", type: "text/css"}/
     %link{href: "stylesheets/h2.css", media: "screen", rel: "stylesheet", type: "text/css"}/
+    =javascript_include_tag("date")
     /
       Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     %title H2
   %body
+
+
     #absolute-wrapper
       %a.brand{href: "#"} AwesomeCo
     .navbar.navbar-fixed-top
@@ -27,7 +30,7 @@
         %img.pull-left.image{src: "images/bolt.png"}/
         %ul.nav.pull-right
           %li
-            %a{href: "#"} Home
+            Home
           %li
             %a{href: "#"} Tour
           %li
@@ -36,7 +39,7 @@
       .container
         .row-fluid
           %span.span12
-            %h1.heading Marketing Info Page
+            %h1.heading Profile
             %p Subheading for marketing info
     .container.container-1
       .row-fluid
@@ -76,9 +79,9 @@
     %br
       %br
         \      
-        .span3.well
+        .span2.well.left
           \        
-          %center
+          .center
             \        
             %a{"data-toggle" => "modal", href: "#aboutModal"}
               %img.img-circle
@@ -135,19 +138,235 @@
                         %hr
                           \    
                           %center
-                            \    ;p class="text-left">
+                            \    
                             %strong Bio:
                             %br
-                              \     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.
+                              \     Vous souhaitez participer a l'évenement en tant que ?
                             \      
                             %br
+                              %a.btn.btn-sm.btn-info{href: "#" } Join as a Hacker
+                              %a.btn.btn-sm.btn-primary{href: "#"} Join as a Helper
+                              \      
+        .span2.well.left
+          \        
+          .center
+            \        
+            %a{"data-toggle" => "modal", href: "#aboutModal"}
+              %img.img-circle
+                = image_tag("hackathons.png")
+              \        
+              %h3 Joe Sixpack
+              \        
+              %em click my face for more
+              \         ;p>By the way,
+              %br
+                %a{href: "http://bootsnipp.com/TXTCLASS/snippets/25zz", target: "_blank"} there's a fresh 3.1.0 version ready
+              \      
+            \            
+            #aboutModal.modal.hide
+              \          
+              .modal-header
+                \              
+                %button.close{"data-dismiss" => "modal", type: "button"} ✕
+                \              
+                %h3 About Joe
+                \          
+              \              
+              .modal-body{style: "text-align:center;"}
+                \              
+                .row-fluid
+                  \                  
+                  .span10.offset1
+                    \                      
+                    #modalTab
+                      \                          
+                      .tab-content
+                        \                              
+                        #about.tab-pane.active
+                          \    
+                          %img.img-circle
+                            = image_tag("hackathons.png")
+                          \      
+                          %h3.media-heading
+                            Joe Sixpack
+                            %small USA
+                          \                
+                          %span
+                            %strong Skills:
+                          \                
+                          %span.label.label-warning HTML5/CSS
+                          \                
+                          %span.label.label-info Adobe CS 5.5
+                          \                
+                          %span.label.label-info Microsoft Office
+                          \                
+                          %span.label.label-success Windows XP, Vista, 7
+                          \    
+                        \    
+                        %hr
+                          \    
+                          %center
+                            \    
+                            %strong Bio:
+                            %br
+                              \     Vous souhaitez participer a l'évenement en tant que ?
+                            \      
+                            %br
+                              %a.btn.btn-sm.btn-info{href: "#" } Join as a Hacker
+                              %a.btn.btn-sm.btn-primary{href: "#"} Join as a Helper
+        
+
+                            \      
+                          \  
+        .span2.well.left
+          \        
+          .center
+            \        
+            %a{"data-toggle" => "modal", href: "#aboutModal"}
+              %img.img-circle
+                = image_tag("hackathons.png")
+              \        
+              %h3 Joe Sixpack
+              \        
+              %em click my face for more
+              \         ;p>By the way,
+              %br
+                %a{href: "http://bootsnipp.com/TXTCLASS/snippets/25zz", target: "_blank"} there's a fresh 3.1.0 version ready
+              \      
+            \            
+            #aboutModal.modal.hide
+              \          
+              .modal-header
+                \              
+                %button.close{"data-dismiss" => "modal", type: "button"} ✕
+                \              
+                %h3 About Joe
+                \          
+              \              
+              .modal-body{style: "text-align:center;"}
+                \              
+                .row-fluid
+                  \                  
+                  .span10.offset1
+                    \                      
+                    #modalTab
+                      \                          
+                      .tab-content
+                        \                              
+                        #about.tab-pane.active
+                          \    
+                          %img.img-circle
+                            = image_tag("hackathons.png")
+                          \      
+                          %h3.media-heading
+                            Joe Sixpack
+                            %small USA
+                          \                
+                          %span
+                            %strong Skills:
+                          \                
+                          %span.label.label-warning HTML5/CSS
+                          \                
+                          %span.label.label-info Adobe CS 5.5
+                          \                
+                          %span.label.label-info Microsoft Office
+                          \                
+                          %span.label.label-success Windows XP, Vista, 7
+                          \    
+                        \    
+                        %hr
+                          \    
+                          %center
+                            \    
+                            %strong Bio:
+                            %br
+                              \     Vous souhaitez participer a l'évenement en tant que ?
+                            \      
+                            %br
+                              %a.btn.btn-sm.btn-info{href: "#" } Join as a Hacker
+                              %a.btn.btn-sm.btn-primary{href: "#"} Join as a Helper
+                        
+  .row
+    %br
+      %br
+        \      
+        .span2.well.left
+          \        
+          .center
+            \        
+            %a{"data-toggle" => "modal", href: "#aboutModal"}
+              %img.img-circle
+                = image_tag("hackathons.png")
+              \        
+              %h3 Joe Sixpack
+              \        
+              %em click my face for more
+              \         ;p>By the way,
+              %br
+                %a{href: "http://bootsnipp.com/TXTCLASS/snippets/25zz", target: "_blank"} there's a fresh 3.1.0 version ready
+              \      
+            \            
+            #aboutModal.modal.hide
+              \          
+              .modal-header
+                \              
+                %button.close{"data-dismiss" => "modal", type: "button"} ✕
+                \              
+                %h3 About Joe
+                \          
+              \              
+              .modal-body{style: "text-align:center;"}
+                \              
+                .row-fluid
+                  \                  
+                  .span10.offset1
+                    \                      
+                    #modalTab
+                      \                          
+                      .tab-content
+                        \                              
+                        #about.tab-pane.active
+                          \    
+                          %img.img-circle
+                            = image_tag("hackathons.png")
+                          \      
+                          %h3.media-heading
+                            Joe Sixpack
+                            %small USA
+                          \                
+                          %span
+                            %strong Skills:
+                          \                
+                          %span.label.label-warning HTML5/CSS
+                          \                
+                          %span.label.label-info Adobe CS 5.5
+                          \                
+                          %span.label.label-info Microsoft Office
+                          \                
+                          %span.label.label-success Windows XP, Vista, 7
+                          \    
+                        \    
+                        %hr
+                          \    
+                          %center
+                            \    
+                            %strong Bio:
+                            %br
+                              \     Vous souhaitez participer a l'évenement en tant que ?
+                            \      
+                            %br
+                              %a.btn.btn-sm.btn-info{href: "#" } Join as a Hacker
+                              %a.btn.btn-sm.btn-primary{href: "#"} Join as a Helper
                               \      
                             \      
                           \  
-                        
              
 
             %hr
+    %p
+         
+
+        
     /           .span.span9
     /             %br
 
