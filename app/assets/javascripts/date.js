@@ -1,11 +1,11 @@
 /*Programme gestion drag and drop */  
 
 var hacker_color=function(){
-    $(".message_inscription").html("Le monde est beau");
+    $(".message_inscription").html("Vous etes inscrit en tant que participant");
 }
 
 var helper_color=function(){
-    $(".message_inscription").html("Le monde est triste");
+    $(".message_inscription").html("Vous etes inscrit en tant que helper");
 }
 
 
